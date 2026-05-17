@@ -7,6 +7,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
   base:"/portfolio-yeneri/",
+  build: {
+  outDir: "docs"
+},
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
